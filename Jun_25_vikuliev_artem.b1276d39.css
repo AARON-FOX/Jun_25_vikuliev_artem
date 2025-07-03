@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.people {
+  grid-template-columns: repeat(2, 200px);
+  justify-content: center;
+  gap: 40px 30px;
+  min-width: 500px;
+  padding-block: 30px;
+  padding-inline: 35px;
+  display: grid;
+}
+
+@media (width >= 750px) {
+  .people {
+    padding-inline: 160px;
+  }
+}
+
+@media (width >= 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 200px);
+    padding-inline: 55px;
+  }
+}
+
+@media (width >= 1500px) {
+  .people {
+    grid-template-columns: repeat(4, 200px);
+    padding-inline: 305px;
+  }
+}
+
+.person {
+  width: 200px;
+  transition: transform 1s;
+}
+
+.person:hover {
+  background-color: #eee;
+  border-radius: 10px;
+  transform: scale(1.2);
+}
+
+.photo {
+  position: relative;
+}
+
+.photo__image {
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+}
+
+.photo__rank {
+  color: #8b0000;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  position: absolute;
+  top: 84px;
+  left: 158px;
+}
+
+.details {
+  text-align: center;
+}
+
+.details__name {
+  color: #2f4f4f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.extra {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.extra__sport:after {
+  content: ",";
+}
+
+.extra__pay:before {
+  content: "$";
+}
+
+.extra__pay:after {
+  content: "M";
+}
+/*# sourceMappingURL=Jun_25_vikuliev_artem.b1276d39.css.map */
